@@ -12,6 +12,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Myprofile from "./Components/Userdashboard/Myprofile";
 import Addprofile from "./Components/Userdashboard/Addprofile";
 import Editprofile from "./Components/Userdashboard/Editprofile";
+import Footer from "./Pages/Footer";
 
 const App = () => {
   const Error = () => {
@@ -49,6 +50,7 @@ const App = () => {
 
               <Route exact path="/">
                 <Homepage />
+                <Footer />
               </Route>
               <Route path="/contact">
                 <Contact />

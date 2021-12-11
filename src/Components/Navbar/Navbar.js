@@ -11,40 +11,48 @@ function Navbar() {
       <div className="navbar__container">
         {user && (
           <div className="navbar__items">
-            <img className="logo" src="mlogo.png" alt="" />
-            <Link to="/" className="abs">
-              Home
-            </Link>
-            <Link to="/resource" className="abs">
-              Resource
-            </Link>
-
-            <Link to="/about" className="abs">
-              About
-            </Link>
-            <Link to="/contact" className="abs">
-              Contact
-            </Link>
-            <button onClick={logout}>Logout</button>
-            <Link to="/dashboard">Dashboard</Link>
+            {/* <img className="logo" src="mlogo.png" alt="" /> */}
+            <div>
+              <Link to="/" className="abs">
+                Home
+              </Link>
+              <Link to="/resource" className="abs">
+                Resource
+              </Link>
+              <Link to="/about" className="abs">
+                About
+              </Link>
+              <Link to="/contact" className="abs">
+                Contact
+              </Link>
+              <button onClick={logout}>Logout</button>
+              <Link to="/dashboard">Dashboard</Link>
+            </div>
           </div>
         )}
         {!user && (
           <div className="navbar__items">
-            {/* <img src="mlogo.png" height="100" width="100" alt="Maintainance Nepal" /> */}
-            <div><Link to="/" className="abs">
-              Home
-            </Link>
-            <Link to="/about" className="abs">
-              About
-            </Link>
-            <Link to="/contact" className="abs">
-              Contact
-            </Link>
-            <Link className="abs" to="/login">Login</Link>
-            <Link className="abs" to="/register">Register</Link>
+            {/* <img
+              src="../Images/login.jpg"
+              height="100"
+              width="100"
+              alt="Maintainance Nepal"
+            /> */}
+            <div>
+              <Link to="/" className="abs">
+                Home
+              </Link>
+              <Link to="/about" className="abs">
+                About
+              </Link>
+              <Link to="/contact" className="abs">
+                Contact
+              </Link>
+              <Link className="abs" to="/login">
+                Login
+              </Link>
             </div>
-          </div> 
+          </div>
         )}
       </div>
     </>
